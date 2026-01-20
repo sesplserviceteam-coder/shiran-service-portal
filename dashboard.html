@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Engineer Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Engineer Daily Task Entry</h2>
+
+<label>Project Name</label><br>
+<input type="text" id="project"><br><br>
+
+<label>Customer Name</label><br>
+<input type="text" id="customer"><br><br>
+
+<label>Location</label><br>
+<input type="text" id="location"><br><br>
+
+<label>Work Done Today</label><br>
+<textarea id="workDone"></textarea><br><br>
+
+<label>Issue</label><br>
+<textarea id="issue"></textarea><br><br>
+
+<label>Tomorrow Plan</label><br>
+<textarea id="nextPlan"></textarea><br><br>
+
+<button onclick="submitTask()">Submit</button>
+
+<p id="msg"></p>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="submit.js"></script>
+
+</body>
+</html>
